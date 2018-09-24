@@ -11,6 +11,8 @@
     #include <malloc.h>
 #endif
 
+#include <cstddef>
+
 #ifndef _MSC_VER
 #include <iostream>
 #include <limits>
