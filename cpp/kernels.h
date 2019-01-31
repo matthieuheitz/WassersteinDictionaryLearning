@@ -794,7 +794,7 @@ public:
 					for (int d=0; d<D_; d++) {
 						double conv = 0;
 						for (int k=0; k<D_; k++) {
-							conv+=kernel1d[abs(d-k)]*result[k + (i*W_ + j)*D_];
+							conv+=kernel1d[abs(d-k)]*result[nv*N + k + (i*W_ + j)*D_];
 						}
 						tmp[d*W_*H_ + i*W_+j] = conv;
 					}
